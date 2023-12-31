@@ -1,0 +1,231 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bat Boll Game </title>
+    <link rel="stylesheet" href="./BatBollGame.css">
+<style>
+
+    .box{
+
+        text-align: center;
+        margin: 3% 15%;
+        background-color: black;
+        color: white;
+         align-items: center;
+         box-shadow: 0 0 40px #f52cf9;
+        width: 70%;
+        height: 50vh;
+        border: 2px solid  #f52cf9;
+        padding: 21px 21px;
+        border-radius: 10px;
+
+    }
+
+    .box:hover{
+        box-shadow: 0 0 80px #f52cf9;
+        border-radius: 10px;
+    }
+    h1{
+        font-size: 3rem;
+
+        color: white;
+        border: 1px solid #f52cf9;
+        /* box-shadow: 0 0  40px #f52cf9; */
+        margin: 17px 19px;
+        padding: 9px 9px;
+        
+
+    }
+    button{
+        font-size: 15px;
+        font-weight: 600;
+        padding: 12px 24px;
+        border-radius: 25px;
+        background-color:#f52cf9;
+        border:  2px solid #f52cf9;
+        background: transparent;
+        outline: none;
+        color: #f2f2f2;
+        cursor: pointer;
+        transition: 0.3s ease-in;
+        margin:10px 20px;
+        position: relative;
+        margin-top: 10%;
+
+
+       
+    }
+
+    button:hover{
+            color: wheat;
+            background-color: #f52cf9;
+            transform: translateY(-7px);
+        }
+
+      h2{
+        margin-left: 22%;
+        /* border-radius: 50%; */
+        padding-top: 1%;
+        flex-wrap: wrap;
+        justify-content: center;
+        text-align: center;
+        width: 57%;
+        height: 9vh;
+        margin-top: 5.6%;
+        /* font-size: rem; */
+        align-items: center;
+        box-shadow: 0 0  40px #f52cf9;
+        background-color: transparent;
+        color: #f2f2f2;
+        border: 2px solid #f52cf9;
+      }
+
+      .line{
+        width: 60px;
+        height: 60px;
+        color: white;
+        font-size: 8rem;
+        text-align: center;
+        align-items: center;
+        margin-left: 48%;
+        margin-top: -3%;
+        box-shadow: 0 0  40px #f52cf9;
+        border: 2px solid #f52cf9;
+      }
+
+</style>
+</head>
+
+<body bgcolor="black">
+
+    <div id="main">
+        <div class="curcer"></div>
+        <!-- <h1>2024 Start</h1> -->
+   
+
+
+  <div class="line">|</div>  
+
+<h2 id="Result" style="color: white;"></h2>
+
+
+<div class="box">
+
+<h1>Bat Boll Stump Game </h1>
+
+
+<button onclick="
+
+let RandomNumber = Math.random()*3;
+let computreChoice ; 
+
+if(RandomNumber > 0 && RandomNumber <= 1){
+     computreChoice = 'Bat';
+   
+}else if(RandomNumber > 1 && RandomNumber <= 2){
+     computreChoice = 'Boll';
+    
+}else{
+    computreChoice = 'Stump';
+    
+}  
+
+
+let resultMsg ;
+
+if(computreChoice === 'Boll'){
+    resultMsg = 'You Winner ';
+}
+else if(computreChoice === 'Bat'){
+    resultMsg = `It's a tie `;
+    
+}
+else if(computreChoice === 'Stump'){
+    resultMsg = 'Computer has Winner';
+}
+
+let =  document.getElementById('Result').innerText = (` Your Choice IS Bat and  Computre Choice ${computreChoice} =>  Result Is ( ${resultMsg} )`)
+
+resultMsg.style.color = 'red'
+
+
+">Bat</button>
+
+
+
+<button onclick="
+
+ let RandomNumber1 = Math.random()*3;
+ let computreChoice1 ; 
+
+if(RandomNumber1 > 0 && RandomNumber1 <= 1){
+     computreChoice1 = 'Bat';
+   
+}else if(RandomNumber1 > 1 && RandomNumber1 <= 2){
+     computreChoice1 = 'Boll';
+    
+}else{
+    computreChoice1 = 'Stump';
+    
+}  
+
+
+let  resultMsg1 ;
+
+if(computreChoice1 === 'Boll'){
+    resultMsg1 =  `It's a tie `;
+}
+else if(computreChoice1 === 'Bat'){
+    resultMsg1 = 'Computer has Winner';
+    
+}
+else if(computreChoice1 === 'Stump'){
+    resultMsg1 = 'You Winner ';
+}
+
+let =  document.getElementById('Result').innerText = (` Your Choice is Boll  and  Computre Choice ${computreChoice1} =>  Result Is ( ${resultMsg1} )`)
+
+">Boll</button>
+
+<button onclick="
+
+let RandomNumber2 = Math.random()*3;
+let computreChoice2 ; 
+
+if(RandomNumber2 > 0 && RandomNumber2 <= 1){
+    computreChoice2 = 'Bat';
+  
+}else if(RandomNumber2 > 1 && RandomNumber2 <= 2){
+    computreChoice2 = 'Boll';
+   
+}else{
+   computreChoice2 = 'Stump';
+   
+}  
+
+
+let  resultMsg2 ;
+
+if(computreChoice2 === 'Boll'){
+   resultMsg2 =  'Computer has Winner';
+}
+else if(computreChoice2 === 'Bat'){
+   resultMsg2 = 'You Winner ';
+   
+}
+else if(computreChoice2 === 'Stump'){
+   resultMsg2 = `It's a tie `; 
+}
+
+let =  document.getElementById('Result').innerText = (` Your Choice is Stump and  Computre Choice ${computreChoice2} =>  Result Is ( ${resultMsg2} )`)
+
+">Stump</button>
+
+</div>
+
+<script src="./BatBollGame.js"></script>
+</div>
+</body>
+</html>

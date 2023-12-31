@@ -1,0 +1,24 @@
+
+#main{
+    /* padding-top: 17%; */
+    /* // margin:17% 0%; */
+    height: 100%;
+    width: 100%;
+    /* background-color: black;
+    align-items: center;
+    justify-content: center;
+     display: flex; */
+}
+.curcer{
+    height: 18px;
+    box-shadow: 0 0   50% #f52cf9;
+    mix-blend-mode: difference;
+    border: 1px solid #f52cf9;
+    width: 19px;
+    background-color:#f52cf9;
+    color: transparent;
+    border-radius: 50%;
+    position: absolute;
+    transition: all linear 0.2s;
+}
+
